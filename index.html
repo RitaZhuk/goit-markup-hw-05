@@ -45,7 +45,7 @@
         <section class="main-section">
             <div class="conteiner">
             <h1 class="main-title-text">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="mane-btn">Заказать услугу</button>
+        <button type="button" class="mane-btn" data-modal-open>Заказать услугу</button>
     </div>
     </section>
         <!-- peculiar -->
@@ -96,9 +96,15 @@
             <div class="conteiner">
             <h2 class="activity-title">Чем мы занимаемся</h2>
             <ul class="activity-list list">
-                <li class="activity-item"><img src="./images/we-doing-1.jpg" alt="фото 1" width="370" class="activity-image"></li>
-                <li class="activity-item"><img src="./images/we-doing-2.jpg" alt="фото 2" width="370" class="activity-image"></li>
-                <li class="activity-item"><img src="./images/we-doing-3.jpg" alt="фото 3" width="370" class="activity-image"></li>
+                <li class="activity-item"><img src="./images/we-doing-1.jpg" alt="фото 1" width="370" class="activity-image">
+                <p class="activity-img-title">Десктопные приложения</p>
+                </li>
+                <li class="activity-item"><img src="./images/we-doing-2.jpg" alt="фото 2" width="370" class="activity-image">
+                <p class="activity-img-title">Мобильные приложения</p>
+                </li>
+                <li class="activity-item"><img src="./images/we-doing-3.jpg" alt="фото 3" width="370" class="activity-image">
+                <p class="activity-img-title">Дизайнерские решения</p>
+                </li>
             </ul>
             </div>
         </section>
@@ -353,5 +359,15 @@
         </address>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+        <svg width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+    </button>
+</div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
